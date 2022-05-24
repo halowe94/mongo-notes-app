@@ -64,8 +64,8 @@ app.get('/api/note/:uid', (req, res) => {
             collection.findOne(
                 
                 {
-                    //can change to uid
-                    _id: ObjectId(req.params.noteID)
+    
+                    _id: ObjectId(req.params.uid)
                 },
                 (err, success) => {
                     client.close()
